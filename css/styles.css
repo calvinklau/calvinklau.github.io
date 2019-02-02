@@ -26,25 +26,29 @@ nav {
     min-height: 20px;
     position: fixed;
     top: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
 }
 
-#nav_list {
+.nav_list {
     margin: 10px 0;
     padding: 0;
     width: 100%;
     overflow: hidden;
     display: flex;
+    flex-direction: row;
 
     list-style-type: none;
 }
 
-#nav_list li a {
+.nav_list a {
     display: block;
     text-align: center;
     text-decoration: none;
 }
 
-#nav_title {
+.nav_title {
     padding: 10px 20px 0;
     border-right: 2px solid #1DB954;
     color: #1DB954;
@@ -52,10 +56,12 @@ nav {
     font-weight: bold;
 }
 
-#nav_title img {
+.nav_title img {
     height: 30px;
 }
-#nav_list li .nav_item {
+
+.nav_list .nav_item,
+.about_me {
     color: #484848;
     font-size: 20px;
     padding: 20px 20px 0;
@@ -67,8 +73,16 @@ nav {
     text-decoration-color: #1DB954;
 }
 
-#nav_list li .nav_item:hover {
+.nav_list li .nav_item:hover {
     color: #1DB954;
+}
+
+.about_me {
+    width: 100%;
+}
+
+.about_me {
+    margin: 10px 0;
 }
 
 .nav_dropdown {
