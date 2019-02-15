@@ -1,3 +1,10 @@
+/*
+ Calvin Lau
+ 10151228
+ B01
+ Assignment 2
+  calculator.js
+ */
 // Wrapper function to avoid polluting global variable namespace
 (function() {
     let computeFlag = false;
