@@ -1,0 +1,82 @@
+.container-fluid {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.jumbotron {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.history_box {
+    margin-top: -40px;
+    text-align: right;
+}
+
+#result {
+    height: 80px;
+    width: 100%;
+    border: none;
+    border-radius: .25rem;
+    padding-right: 5px;
+    text-align: right;
+    color: #535357;
+}
+
+.result_box {
+    margin: 0 0 30px;
+    height: 80px;
+    text-align: right;
+    font-size: 55px;
+}
+
+.button-wrapper {
+    padding: 5px 0;
+}
+
+.btn {
+    width: 80%;
+    font-size: 25px;
+}
+
+.btn-secondary {
+    background-color: #B7B6BF;
+    border: none;
+}
+
+#clear {
+    width: 90%;
+}
+
+.button-wrapper:hover {
+    cursor: pointer;
+}
+
+.btn:focus,
+.btn:active,
+.btn:active:focus {
+    outline: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    color: #4C4B4F
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .jumbotron {
+        width: 600px;
+    }
+}

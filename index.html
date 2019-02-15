@@ -1,134 +1,137 @@
-<!--
- Calvin Lau
- 10151228
- B01
-  index.html
--->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Golf News</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <nav>
-      <ul class="nav_list">
-        <li><a class="nav_title" href="index.html"><img src="./img/favicon.png" alt="golf news">Golf News</a></li>
-        <li><a class="nav_item" href="leaderboard.html">Leaderboard</a></li>
-        <li>
-          <div class="nav_dropdown">
-            <a class="nav_item nav_drop_btn">Articles</a>
-            <div class="nav_drop_items">
-              <a href="justinrose.html">Justin Rose&rsquo;s Bag</a>
-              <a href="caddieruling.html">Caddie Ruling</a>
-              <a href="tigerwoods.html">Tiger Woods @ Farmers Insurance Open</a>
-              <a href="lynxdriver.html">Lynx Prowler VT Driver</a>
+<head>
+    <meta charset="UTF-8">
+    <title>Calvin's Calculator</title>
+    <link rel="icon" type="image/x-icon" href="img/calculator.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12 history_box">
+                    <p id="history"> </p>
+                </div>
             </div>
-          </div>
-        </li>
-      </ul>
-      <a class="about_me">Calvin Lau</a>
-    </nav>
-    <div id="container">
-      <header class="top_header welcome_header">
-        <div id="header_title">
-          <h1>This Week in Golf</h1>
-          <span>Catch up on the biggest news in golf, all in one place.</span>
-        </div>
-      </header>
-      <article id="bottom_article">
-        <div class="news_item">
-          <div class="news_image">
-            <a href="leaderboard.html"><img src="img/players.jpg" alt="players championship"></a>
-          </div>
-          <div class="news_description">
-            <div class="news_title">
-              <a href="leaderboard.html">
-                <h3>Players Championship Leaderboard</h3>
-              </a>
+            <div class="row">
+                <div class="col-md-12 result_box">
+                    <input id="result" type="text" value="0" readonly>
+                </div>
             </div>
-            <p>
-              View the current leaderboard of day one of the 2019 Players Championship.
-            </p>
-          </div>
-        </div>
-        <div class="news_item">
-          <div class="news-image">
-            <a href="justinrose.html"><img src="img/justinrose.jpg" alt="justin rose"></a>
-          </div>
-          <div class="news_description">
-            <div class="news_title">
-              <a href="justinrose.html">
-                <h3>Winner's Bag: Justin Rose's Honma gear at the Farmers Insurance Open</h3>
-              </a>
+            <div class="row">
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-primary">
+                        (
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-primary">
+                        )
+                    </button>
+                </div>
+                <div class="col-md-6 button-wrapper">
+                    <button id="clear" type="button" class="btn btn-primary">
+                        CE
+                    </button>
+                </div>
             </div>
-            <p>
-              Justin Rose won the Farmers Insurance Open at Torrey Pines not long after his new club deal. Here&rsquo;s a look inside his bag.
-            </p>
-          </div>
-        </div>
-        <div class="news_item">
-          <div class="news-image">
-            <a href="caddieruling.html"><img src="img/haotongli.jpg" alt="caddie ruling"></a>
-          </div>
-          <div class="news_description">
-            <div class="news_title">
-              <a href="caddieruling.html">
-                <h3>'Shockingly bad decision': Pros sound off on costly caddie ruling</h3>
-              </a>
+            <div class="row">
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        7
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        8
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        9
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-primary">
+                        /
+                    </button>
+                </div>
             </div>
-            <p>
-              Many pros were appalled by the controversial Haotong Li ruling including Justin Thomas, Eddie Pepperell, Francesco Molinari and more.
-            </p>
-          </div>
-        </div>
-        <div class="news_item">
-          <div class="news-image">
-            <a href="tigerwoods.html">
-              <img src="img/tiger.jpg" alt="tiger woods">
-            </a>
-          </div>
-          <div class="news_description">
-            <div class="news_title">
-              <a href="tigerwoods.html">
-                <h3>Tiger Woods finishes Farmers Insurance Open with five-under 67</h3>
-              </a>
+            <div class="row">
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        4
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        5
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        6
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-primary">
+                        x
+                    </button>
+                </div>
             </div>
-            <p>
-              Tiger Woods caught fire in his final nine of the Farmers Insurance Open and signed for a five-under 67 on Sunday.
-            </p>
-          </div>
-        </div>
-        <div class="news_item">
-          <div class="news-image">
-            <a href="lynxdriver.html">
-              <img src="img/lynxdriver.jpg" alt="lynx driver">
-            </a>
-          </div>
-          <div class="news_description">
-            <div class="news_title">
-              <a href="lynxdriver.html">
-                <h3>How Lynx plans to shake up the equipment industry with its Prowler VT driver</h3>
-              </a>
+            <div class="row">
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        1
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        2
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        3
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-primary">
+                        -
+                    </button>
+                </div>
             </div>
-            <p>
-              Lynx is hoping its new Prowler VT's "Switch-face technology" will help return them to a prominent place in the golf equipment industry.
-            </p>
-          </div>
+            <div class="row">
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        0
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-secondary">
+                        .
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-success">
+                        =
+                    </button>
+                </div>
+                <div class="col-md-3 button-wrapper">
+                    <button type="button" class="btn btn-primary">
+                        +
+                    </button>
+                </div>
+            </div>
         </div>
-      </article>
-      <footer>
-        <div>
-          <a href="#"><img class="footer_icon" src="img/facebook.png" alt="facebook"></a>
-          <a href="#"><img class="footer_icon" src="img/twitter.png" alt="twitter"></a>
-          <a href="#"><img class="footer_icon" src="img/instagram.png" alt="instagram"></a>
-          <a href="#"><img class="footer_icon" src="img/linkedin.png" alt="linkedin"></a>
-        </div>
-        <span>Copyright &copy; 2019 Golf News</span>
-      </footer>
+        <footer>Created by Calvin Lau</footer>
     </div>
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="calculator.js"></script>
+</body>
 </html>
